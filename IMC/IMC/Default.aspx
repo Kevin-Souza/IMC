@@ -24,7 +24,7 @@
                         <label>informe sua altura:</label>
                         <asp:RequiredFieldValidator ID="rfvAltura" ControlToValidate="txtAltura"
                             ErrorMessage="*" ForeColor="Red" runat="server"></asp:RequiredFieldValidator>
-                        <asp:TextBox ID="txtAltura" runat="server" placeholder="cm" CssClass="form-control"></asp:TextBox>
+                        <asp:TextBox ID="txtAltura" runat="server" placeholder="Metros" CssClass="form-control"></asp:TextBox>
                     </div>
                 </div>
                 <div class="row">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="col-row-12" style="padding-top: 20px">
-                    <asp:Button ID="btnCalc" runat="server" Text="Calcular" CssClass="btn-primary" />
+                    <asp:Button ID="btnCalc" runat="server" Text="Calcular" CssClass="btn-primary" OnClick="btnCalc_Click" />
                 </div>
                 <div class="col-row-12" style="padding-top: 20px">
                     <asp:Label ID="lblResu" runat="server" Text=""></asp:Label>
